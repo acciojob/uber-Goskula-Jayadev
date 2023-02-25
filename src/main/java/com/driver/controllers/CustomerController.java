@@ -20,7 +20,7 @@ public class CustomerController {
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
-	@DeleteMapping("/delete")
+	@DeleteMapping("/delet")
 	public void deleteCustomer(@RequestParam Integer customerId){
 		customerServiceImpl.deleteCustomer(customerId);
 	}
@@ -36,7 +36,7 @@ public class CustomerController {
 		customerServiceImpl.completeTrip(tripId);
 	}
 
-	@DeleteMapping("/cancelTrip")
+	@DeleteMapping("/canceTrip")
 	 void cancelTrip(@RequestParam Integer tripId){
 		customerServiceImpl.cancelTrip(tripId);
 	}
